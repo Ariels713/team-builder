@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import Data from './components/Data'
 
-// import './App.css';
+// Data
+import Data from './components/Data'
 
 //components
 import UserForm from './components/UserForm'
 import UserList from './components/UserList'
+// import NewUser from './components/NewUser'
 
 
 
 function App() {
   const [userData, setUserData] = useState(Data);
-  console.log(`App Data: ${Data}`)
+
+  const addNewUser = newEntry => {
+    setUserData([...userData, newEntry])
+  }
+
   return (
     <div className="App">
-      <UserForm />
-
+      <UserForm newUser={addNewUser}/>
       <UserList userData={userData}/>
+      {/* <NewUser newUser={addNewUser}/> */}
     </div>
   );
 }

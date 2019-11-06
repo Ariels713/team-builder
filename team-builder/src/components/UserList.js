@@ -2,7 +2,7 @@ import React from "react";
 import { Container, List } from "semantic-ui-react";
 
 export default function UserList(props) {
-  console.log(props);
+//   console.log(props);
   return (
     <div>
       {props.userData.map(item => {
@@ -27,7 +27,6 @@ export default function UserList(props) {
                 <List.Icon name="phone" />
                 <List.Content>{item.phone}</List.Content>
               </List.Item>
-
             </List>
           </Container>
         );
