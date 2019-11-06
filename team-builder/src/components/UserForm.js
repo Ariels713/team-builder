@@ -22,17 +22,19 @@ const UserForm = (props) => {
         }
         props.newUser(newUser)
     }
-    console.log(user.fName)
+    
+    //Semantics-UI 
+
     return(
         <Container style={{ margin: 20 }}>
         <Form onSubmit={formSubmit}>
           <Form.Group unstackable widths={2}>
-            <Form.Input label="First name" placeholder="First name" value={user.fName} onChange={changeHandler} />
-            <Form.Input label="Last name" placeholder="Last name" value={user.fName} onChange={changeHandler} />
+            <Form.Input name="fName" label="Full Name" placeholder="Full Name" value={user.fName} onChange={changeHandler} />
+            <Form.Input name="email" label="Email" placeholder="Location" value={user.email} onChange={changeHandler} />
           </Form.Group>
           <Form.Group widths={2}>
-            <Form.Input label="Address" placeholder="Address" value={user.fName} onChange={changeHandler}/>
-            <Form.Input label="Phone" placeholder="Phone" value={user.fName} onChange={changeHandler}/>
+            <Form.Input name="address" label="Address" placeholder="Location" value={user.address} onChange={changeHandler}/>
+            <Form.Input name="phone" label="Phone" placeholder="Phone" value={user.phone} onChange={changeHandler}/>
           </Form.Group>
           {/* <Form.Checkbox label="I agree to the Terms and Conditions" /> */}
           <Button type="submit">Submit</Button>
