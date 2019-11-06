@@ -31,12 +31,12 @@ Follow these steps for completing your project.
 - [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
 - [x] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Render a list of team members from state
-- [ ] Build a form to add a new member to the list of members
+- [x] Render a list of team members from state
+- [x] Build a form to add a new member to the list of members
 
 ### STEP 1 - Setup your state
 
